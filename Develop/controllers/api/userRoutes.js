@@ -23,7 +23,7 @@ router.post('/login', async (req, res) => {
     if (!userData) {
       res
         .status(400)
-        .json({ message: 'Failure to login,incorrect username or password.' });
+        .json({ message: 'Failure to login, incorrect username or password.' });
       return;
     }
 
@@ -32,7 +32,7 @@ router.post('/login', async (req, res) => {
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: 'Failure to login,incorrect username or password.' });
+        .json({ message: 'Failure to login, incorrect username or password.' });
       return;
     }
 
