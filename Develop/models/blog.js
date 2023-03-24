@@ -17,6 +17,7 @@ Blog.init(
     },
     blog_text: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     posted_by: {
         type: DataTypes.STRING,

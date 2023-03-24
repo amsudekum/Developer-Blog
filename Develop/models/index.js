@@ -16,7 +16,7 @@ Blog.belongsTo(User, {
 }); // but the blog can only belong to one user.
 
 Blog.hasMany(Comment, {
-  foreignKey: 'post_id'
+  foreignKey: 'comment_id'
 }) //the blog will have multiple comments.
 
 Comment.belongsTo(User, {
@@ -24,11 +24,11 @@ Comment.belongsTo(User, {
 }); // a comment belongs to one user 
 
 Comment.belongsTo(Blog, {
-  foreignKey: 'post_id'
+  foreignKey: 'comment_id'
 });
 
 
 
 
 
-module.exports = { User, Blog };
+module.exports = { User, Blog, Comment };
