@@ -7,6 +7,6 @@ router.get('/', async (req, res) => {
  .then(dbCommentData => res.json(dbCommentData))
  .catch(err) => {
     console.log(Err);
-    res.status(500).json(err)
+    res.status(500).json(err);
  };
- }
+ })
